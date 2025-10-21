@@ -13,7 +13,7 @@ class Categoria(Document):
 
 # Modelo de juego
 class Juego(Document):
-    titulo = StringField(required=True) # Titulo del juego
+    titulo = StringField(required=True) # Titulo del juegos
     descripcion = StringField() # Pequeña descripcion del juego
     categoria = ReferenceField(Categoria, required=True)  # Aqui hace referencia a lka categoria del jeugo.
     plataforma = StringField()  # Plataforma donde sale el juego
